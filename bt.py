@@ -37,7 +37,7 @@ def disconnect():
 #The response will also be one character long
 def sendMsg(message):
     sock.send(message)
-    rawResponse = sock.recv(32)
+    rawResponse = sock.recv(1024)
     if not rawResponse:
         return "Error"
     else:
