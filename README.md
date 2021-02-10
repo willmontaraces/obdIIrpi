@@ -14,3 +14,8 @@ sudo bt-agent -c NoInputNoOutput -p /root/bluetooth.cfg
 
 ## Warning
 Currently the program offers no support for OBDII disconnections, run the program once the OBD reader is powered on and working.
+
+## TODO
+1. Add support for bluetooth retry until successful connection
+2. Add support for configurable PID reading and expand support for more useful PID
+3. Add support for seamless Ubidots connection, currently there needs to be a file named dataStoring.py with a constant called 'UBI_USER'
